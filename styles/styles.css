@@ -1,7 +1,10 @@
+/* Добавить определение шрифта @font-face */
+
 body {
   margin: 0;
   padding: 0;
-  font-family: "Metropolis";
+  /* Лучше указывать несколько шрифтов */
+  font-family: "Metropolis", Helvetica, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -13,6 +16,7 @@ body {
   width: 80vw;
   margin: 0 auto;
 }
+/* Для расширения свойств селектора, необходимо использовать вложенность */
 .header-top .container {
   display: flex;
 }
@@ -57,6 +61,7 @@ body {
 
 .version {
   background-color: rgba(247, 241, 255, 1);
+  /* Лучше использовать transparent */
   border: 1px solid rgba(247, 241, 255, 1);
   border-radius: 20vw;
   padding: 0.5vw 1vw;
@@ -153,7 +158,7 @@ body {
   font-size: 32px;
 }
 .pikcha-1 {
-  background: url("/img/Concentric-circles.png") no-repeat;
+  background: url("../img/Concentric-circles.png") no-repeat;
   background-position: 1vw 3vw;
 }
 
@@ -358,7 +363,7 @@ body {
   padding-top: 5vw;
 }
 .mail {
-  background: url("/img/ionic-ios-send.png") no-repeat right;
+  background: url("../img/ionic-ios-send.png") no-repeat right;
   height: 2vw;
   padding-left: 1vw;
 }
@@ -420,7 +425,7 @@ body {
     font-size: small;
   }
   .middle-one h2 {
-    font-size: x-large;
+    font-size: xx-large;
   }
   .pikcha-1 img {
     width: 40vw;
