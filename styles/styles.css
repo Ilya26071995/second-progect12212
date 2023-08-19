@@ -6,14 +6,14 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
-  max-width: 1440px;
-  width: 100vw;
+  /* Для body не указывает max-width, но указываем min-width: 375px; */
 }
 .container {
+  max-width: 1440px;
   width: 80vw;
   margin: 0 auto;
 }
-.header-top {
+.header-top .container {
   display: flex;
 }
 
